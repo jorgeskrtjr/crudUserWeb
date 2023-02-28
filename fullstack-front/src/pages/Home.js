@@ -24,6 +24,7 @@ function Home() {
                             <th scope="col">Username</th>
                             <th scope="col">Name</th>
                             <th scope="col">Email</th>
+                            <th scope="col">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -34,6 +35,11 @@ function Home() {
                                     <td>{user.username}</td>
                                     <td>{user.name}</td>
                                     <td>{user.email}</td>
+                                    <td>
+                                        <button className='btn btn-primary mx-2'>View</button>
+                                        <button className='btn btn-outline-primary max-2'>Edit</button>
+                                        <button className='btn btn-danger mx-2'>delete</button>
+                                    </td>
                                 </tr>
                             ))
                         }
