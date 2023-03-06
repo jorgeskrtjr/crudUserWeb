@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, {useState} from 'react'
-import {useNavigate } from "react-router-dom";
+import {Link, useNavigate } from "react-router-dom";
 
 function AddUser() {
     
@@ -52,7 +52,7 @@ function AddUser() {
 
                         <div className='text-center'>
                             <button type='submit' className='btn btn-outline-success m-2' >Submit</button>
-                            <button type='submit' className='btn btn-outline-danger m-2' >Cancel</button>
+                            <Link type='submit' className='btn btn-outline-danger m-2' to="/">Cancel</Link>
                         </div>
 
                     </form>
